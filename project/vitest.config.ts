@@ -1,6 +1,7 @@
-import path from "node:path";
-import { defineConfig } from "vitest/config";
+import { fileURLToPath } from 'node:url';
+import { defineConfig } from 'vitest/config';
 
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 export default defineConfig({
     test: {
         name: "spt-server",
@@ -21,6 +22,9 @@ export default defineConfig({
         },
         pool: "threads",
         poolOptions: { threads: { singleThread: true, isolate: false } },
-        alias: { "@spt": path.resolve(__dirname, "src"), "@tests": path.resolve(__dirname, "tests") },
+        alias: {
+            "@spt": fileURLToPath(new URL("src", import.meta.url)),
+            "@tests": fileURLToPath(new URL("tests", import.meta.url))
+        },
     },
 });

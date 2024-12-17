@@ -1,10 +1,27 @@
 {
-    "extends": "./tsconfig.base.json",
     "compilerOptions": {
-        "resolveJsonModule": true,
-        "outDir": "obj",
-        "declaration": true
-    },
-    "include": ["./src/**/*", "./tests/**/*", "./types/**/*", "./user/mods/**/*"],
-    "exclude": ["./user/mods/**/*"]
+        "lib": ["ESNext"],
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleDetection": "force",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": true,
+        "noEmit": true,
+        "strict": false,
+        "skipLibCheck": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": ".",
+        "paths": {
+            "@spt/*": ["./src/*"],
+            "@tests/*": ["./tests/*"]
+        }
+    }
 }

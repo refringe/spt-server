@@ -1,5 +1,5 @@
+import "core-js";
 import "reflect-metadata";
-import "source-map-support/register";
 
 import { Program } from "@spt/Program";
 import * as buildInfo from "./build.json";

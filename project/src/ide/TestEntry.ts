@@ -1,7 +1,8 @@
+import "core-js";
 import "reflect-metadata";
-import "source-map-support/register";
 
-import { Program } from "@spt/Program";
+import { Program } from "../Program";
+
 // target run:profiler doesnt work with this here
 // since this is the Test entry we can just remove
 // it and leave those empty

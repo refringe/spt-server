@@ -26,25 +26,19 @@
         "configurations": [
             {
                 "name": "Debug",
-                "type": "node",
-                "runtimeVersion": "20.11.1",
-                "runtimeExecutable": "npm",
+                "type": "bun",
+                "runtime": "bun",
                 "request": "launch",
-                "sourceMaps": true,
-                "runtimeArgs": ["run", "run:debug"],
-                "outFiles": ["!**/node_modules/**"],
+                "runtimeArgs": [
+                    "run",
+                    "start",
+                ],
                 "cwd": "${workspaceFolder}",
-                "outputCapture": "std"
-            },
-            {
-                "name": "Run Vitest Tests",
-                "type": "node",
-                "runtimeVersion": "20.11.1",
-                "runtimeExecutable": "npm",
-                "request": "launch",
-                "runtimeArgs": ["run", "test"],
-                "console": "integratedTerminal",
-                "internalConsoleOptions": "neverOpen"
+                "env": {},
+                "strictEnv": false,
+                "watchMode": false,
+                "stopOnEntry": false,
+                "noDebug": false
             }
         ]
     }

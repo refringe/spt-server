@@ -9,7 +9,7 @@
             ".git/*",
             ".pkg-cache/*",
             ".vscode/*",
-            "build/*",
+            "build/dist/*",
             "node_modules/*",
             "obj/*",
             "out/*",
@@ -38,7 +38,7 @@
             "**/.git",
             "**/.pkg-cache",
             "**/.vscode",
-            "**/build",
+            "**/build/dist",
             "**/node_modules",
             "**/types",
             "**/tests/__cache__",
@@ -69,17 +69,5 @@
         "formatter": {
             "trailingCommas": "none"
         }
-    },
-    "overrides": [
-        {
-            "include": ["tests/*"],
-            "linter": {
-                "rules": {
-                    "suspicious": {
-                        "noExplicitAny": "off"
-                    }
-                }
-            }
-        }
-    ]
+    }
 }

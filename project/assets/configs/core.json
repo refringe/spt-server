@@ -1,5 +1,5 @@
 {
-    "sptVersion": "3.10.3",
+    "sptVersion": "4.0.0",
     "projectName": "SPT",
     "compatibleTarkovVersion": "0.15.5.33420",
     "serverName": "SPT Server",
@@ -56,7 +56,12 @@
             "farewellPageData": {
                 "textLocaleKey": "farewell"
             },
-            "pages": [[0, 1]],
+            "pages": [
+                [
+                    0,
+                    1
+                ]
+            ],
             "questions": [
                 {
                     "id": 0,

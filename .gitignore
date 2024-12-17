@@ -2,7 +2,6 @@
 *.exe
 *.zip
 *.d.ts
-project/build/
 project/obj/
 project/dist/
 project/user/

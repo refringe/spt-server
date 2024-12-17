@@ -1,21 +1,33 @@
 {
     "compilerOptions": {
-        "noUncheckedIndexedAccess": true,
+        "lib": [
+            "ESNext"
+        ],
+        "target": "ESNext",
+        "module": "ESNext",
         "moduleDetection": "force",
-        "allowJs": false,
-        "module": "CommonJS",
-        "target": "ES2022",
-        "allowSyntheticDefaultImports": true,
-        "moduleResolution": "Node10",
-        "esModuleInterop": true,
-        "downlevelIteration": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
+        "allowJs": true,
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": true,
+        "noEmit": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noPropertyAccessFromIndexSignature": false,
+        "types": [
+            "bun"
+        ],
         "baseUrl": ".",
         "paths": {
-            "@spt/*": ["src/*"],
-            "@tests/*": ["tests/*"]
+            "@spt/*": [
+                "./src/*"
+            ],
+            "@tests/*": [
+                "./tests/*"
+            ]
         }
-    },
-    "include": ["src/*", "src/**/*"]
+    }
 }

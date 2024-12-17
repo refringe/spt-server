@@ -1,6 +1,3 @@
-import "reflect-metadata";
-import "source-map-support/register";
-
 import { ErrorHandler } from "@spt/ErrorHandler";
 import { Container } from "@spt/di/Container";
 import { ProductionQuestsGen } from "@spt/tools/ProductionQuestsGen/ProductionQuestsGen";
